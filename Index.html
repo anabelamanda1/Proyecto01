@@ -36,7 +36,18 @@
             "nombre": "Julieta",
             "edad": 22
         }
-    ]
+    ];
+    
+    function isLegal(edad, nombre){
+        if(edad > 18 || edad == 18){
+            console.log(nombre+" es legal");
+        }
+    }
+    exdeAxel.forEach((e) => {
+        // es legal
+        isLegal(e.edad, e.nombre);
+    });
+
 </script>
 
 </html>
